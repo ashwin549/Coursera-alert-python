@@ -1,0 +1,4 @@
+pyperclip
+pyautogui
+pywin32
+pygame
