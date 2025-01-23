@@ -8,7 +8,7 @@ import pygame
 def ring_buzzer():
     pygame.mixer.init()
     pygame.mixer.music.load("buzzer.mp3")
-    pygame.mixer.music.play(-1)  # -1 means loop indefinitely
+    pygame.mixer.music.play(-1)  
 
     while True:
         command = input("Type 'stop' to stop the buzzer: ")
@@ -22,15 +22,12 @@ def get_chrome_url():
     
     # Check if the active window is Chrome
     if 'Google Chrome' in window_title:
-        # Focus on the address bar
+        # Copy URL
         pyautogui.hotkey('ctrl', 'l')
         time.sleep(0.5)
-        
-        # Copy the URL
         pyautogui.hotkey('ctrl', 'c')
         time.sleep(0.5)
         
-        # Get the URL from clipboard
         url = pyperclip.paste()
         return url
     else:
@@ -46,5 +43,4 @@ if __name__ == "__main__":
                 ring_buzzer()
         else:
             continue
-        time.sleep(5)  # Wait for 5 seconds before checking again
-
+        time.sleep(5)  
