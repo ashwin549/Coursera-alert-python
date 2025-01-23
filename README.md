@@ -12,7 +12,7 @@ This project is a Python script that monitors the active Google Chrome tab and a
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/Coursera-alert-python.git
+   git clone https://github.com/ashwin549/Coursera-alert-python.git
    cd Coursera-alert-python
    ```
 2. Install the required libraries using [requirements.txt](requirements.txt):
